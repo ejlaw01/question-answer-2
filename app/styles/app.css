@@ -1,0 +1,21 @@
+h1 {
+  float: left;
+  position: absolute;
+  top: 10px;
+  left: 20px;
+}
+
+.header {
+  height: 70px;
+}
+
+.nav-link {
+  float: right;
+  position: relative;
+  top: 35px;
+  right: 20px;
+}
+
+.body {
+  position: absolute;
+}
