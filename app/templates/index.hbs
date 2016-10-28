@@ -1,11 +1,23 @@
 <h1>Question &amp; Answer</h1>
 
+
+<h3>Questions:</h3>
 <ul>
   {{#each model.questions as |question|}}
+    {{#link-to 'question' question.id}}
+      <li>
+        <strong>{{question.author}}</strong> asked: <i>{{question.query}}</i>
+        <br><br>
+      </li>
+    {{/link-to}}
+  {{/each}}
+</ul>
+
+<h3>Answers:</h3>
+<ul>
+  {{#each model.answers as |answer|}}
     <li>
-      <strong>{{question.author}}</strong> asked: <i>{{question.query}}</i>
-      <br>
-      {{question.details}}
+      <strong>{{answer.author}}</strong> said: <i>{{answer.response}}</i>
       <br><br>
     </li>
   {{/each}}
