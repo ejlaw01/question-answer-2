@@ -1,6 +1,3 @@
-<h1>Question &amp; Answer</h1>
-
-
 <h3>Questions:</h3>
 <ul>
   {{#each model.questions as |question|}}
@@ -12,6 +9,8 @@
     {{/link-to}}
   {{/each}}
 </ul>
+
+{{add-question saveQuestion="saveQuestion" question=question}}
 
 <h3>Answers:</h3>
 <ul>
