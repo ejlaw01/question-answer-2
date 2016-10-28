@@ -1,0 +1,19 @@
+{ "questions": [{
+    "author": "Bobby Treefall",
+    "query": "If a tree falls in a forest and no one's there to hear it, does it make a sound?",
+    "details": "I just want a straight answer."
+  }, {
+    "author": "Romero Relampago",
+    "query": "What is the meaning of life?",
+    "details": "I know this is a tough one, but I'm really curious."
+  }],
+
+  "answers": [{
+    "author": "Ethan Law",
+    "response": "No, it doesn't."
+  }, {
+    "author": "Deep Thought",
+    "response": "42"
+  }]
+
+}

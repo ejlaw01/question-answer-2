@@ -1,1 +1,12 @@
 <h1>Question &amp; Answer</h1>
+
+<ul>
+  {{#each model.questions as |question|}}
+    <li>
+      <strong>{{question.author}}</strong> asked: <i>{{question.query}}</i>
+      <br>
+      {{question.details}}
+      <br><br>
+    </li>
+  {{/each}}
+</ul>
