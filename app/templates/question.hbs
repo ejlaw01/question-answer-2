@@ -4,4 +4,13 @@
 
 {{edit-question update="update" question=model}}
 
-{{answer-question saveAnswer="saveAnswer"}}
+{{answer-question saveAnswer="saveAnswer" question=model}}
+
+<h3>Answers:</h3>
+<ul>
+  {{#each question.answers as |answer|}}
+    <li>
+      <strong>{{answer.author}}</strong> said: <i>{{answer.response}}</i>
+    </li>
+  {{/each}}
+</ul>
