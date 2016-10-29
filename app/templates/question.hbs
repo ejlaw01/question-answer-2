@@ -7,9 +7,10 @@
 {{answer-question saveAnswer="saveAnswer" question=model}}
 
 <h4>Answers:</h4>
-
 <ul>
-  {{#each answers as |answer|}}
-    {{answer-tile answer=answer}}    
+  {{#each model.answers as |answer|}}
+    <li>
+      <strong>{{answer.author}}</strong> said: <i>{{answer.response}}</i>
+    </li>
   {{/each}}
 </ul>
