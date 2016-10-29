@@ -1,16 +1,15 @@
-<h2>{{model.query}}</h2>
-<h3>asked by {{model.author}}</h3>
+<h3>{{model.query}}</h3>
+<h4>asked by {{model.author}}</h4>
 <p>{{model.details}}</p>
 
 {{edit-question update="update" question=model}}
 
 {{answer-question saveAnswer="saveAnswer" question=model}}
 
-<h3>Answers:</h3>
+<h4>Answers:</h4>
+
 <ul>
-  {{#each question.answers as |answer|}}
-    <li>
-      <strong>{{answer.author}}</strong> said: <i>{{answer.response}}</i>
-    </li>
+  {{#each answers as |answer|}}
+    {{answer-tile answer=answer}}    
   {{/each}}
 </ul>
