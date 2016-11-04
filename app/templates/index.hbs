@@ -3,6 +3,7 @@
   {{#each model.questions as |question|}}
     {{#link-to 'question' question.id}}
       <li>
+        {{best-answer question}}
         <strong>{{question.author}}</strong> asked: <i>{{question.query}}</i>
         <br><br>
       </li>
