@@ -9,6 +9,11 @@
 <h4>Answers:</h4>
 <ul>
   {{#each model.answers as |answer|}}
-    {{answer-tile answer=answer}}    
+    <!-- {{answer-tile answer=answer}}     -->
+    <li>
+      <strong>{{answer.author}}</strong> said: <i>{{answer.response}}</i>
+      <button id="upvote" {{action 'upvote' answer}}><img src="http://iconshow.me/media/images/Mixed/line-icon/png/512/like-512.png"></button>
+      <!-- <button id="downvote"></button> -->
+    </li>
   {{/each}}
 </ul>
