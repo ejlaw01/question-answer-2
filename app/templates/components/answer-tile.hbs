@@ -1,5 +1,8 @@
-    <!-- <li>
+<ul>
+  {{#each sortedAnswers as |answer|}}
+    <li>
       <strong>{{answer.author}}</strong> said: <i>{{answer.response}}</i>
-      <button id="upvote" {{action 'upvote'}}><img src="http://iconshow.me/media/images/Mixed/line-icon/png/512/like-512.png"></button>
-      <button id="downvote"></button>
-    </li> -->
+      <button id="upvote" {{action 'upvote' answer}}><img src="http://iconshow.me/media/images/Mixed/line-icon/png/512/like-512.png"></button>
+    </li>
+  {{/each}}
+</ul>
