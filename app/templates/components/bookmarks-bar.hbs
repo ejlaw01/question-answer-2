@@ -5,6 +5,7 @@
         <h5>{{question.author}}</h5>
       {{/link-to}}
       <i>{{question.query}}</i>
+      <button class="tiny-button trash" {{action 'remove' question}}><img src="http://getfreeicon.com/preview/trash_can_2_small.png" alt="trash bookmark"></button>
     </div>
   {{/each}}
 </div>
