@@ -25,6 +25,18 @@ button {
   margin: 20px;
 }
 
+.bookmarks-bar {
+  position: relative;
+  top: 50px;
+  right: 10px;
+  float: right;
+  width: 230px;
+}
+
+.bookmark {
+  margin: 20px;
+}
+
 #upvote {
   height: 25px;
   width: 25px;

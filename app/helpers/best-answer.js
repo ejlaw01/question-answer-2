@@ -10,7 +10,7 @@ export function bestAnswer(params) {
   }
 
   // for (var i = 0; i < question.get('answers').get('length'); i++) {
-  //   if (answers[i].upvotes > 5) {
+  //   if (answers[i].get('upvotes') > 5) {
   //     return Ember.String.htmlSafe('<span class="glyphicon glyphicon-fire"></span>');
   //   }
   // }
